@@ -1,0 +1,24 @@
+@import url(fontawesome-all.min.css);
+@import url(main.css);
+#timer {
+    font-family: monospace;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 8px;
+    font-weight: bold;
+    z-index: 100;
+    color: #000;
+    opacity: 0.5;
+    padding: 3.5px;
+}
+#input-support-amount {
+    width: 100px;
+    margin-bottom: 10px;
+}
+#support-form {
+    margin-bottom: 10px;
+}
+p {
+    margin: 0 0 0.5rem 0;
+}
