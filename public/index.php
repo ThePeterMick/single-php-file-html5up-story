@@ -32,7 +32,6 @@ function request($key = null)
 
 function response($html)
 {
-    // let's make it a single line, just like Big Brother single php file remoteok.io does it! :-)
     $response = str_replace(array("\r", "\n"), '', trim($html));
     return preg_replace('/\>\s+\</m', '><', $response);
 }
@@ -116,25 +115,8 @@ switch ($_action) {
             <div class="content">
                 <h2>⚡ <a href="/">Single PHP File Template Starter Kit</a></h2>
                 <p class="major">Be empowered by performance, low costs and simplicity.<br/>Build something
-                    amazing.<br/></p>
-                <p>For help and support 👉 <a target="_blank" href="https://twitter.com/melvoio">@melvoio</a></p>
-                <p>Feedback always welcome 👉 <a target="_blank" href="https://twitter.com/melvoio">@melvoio</a></p>
-                <p>Contribute and star on GitHub 👉 <a target="_blank"
-                                                       href="https://github.com/melvoio/single-php-file">https://github.com/melvoio/single-php-file</a>
-                </p>
-                <p>Like it? 👉 It would be super cool if you could send a <a target="_blank" href="
-                   https://twitter.com/intent/tweet?text=I%27ve%20just%tried%20https%3A//singlephpfile.com/%20by%20@melvoio%20and%20I%27m%20loving%20it%20❤️">tweet</a>
-                    about it</p>
-                <p>Want more? 👉 <a target="_blank" href="https://twitter.com/melvoio">Tell me</a></p>
-                <p>Found a bug 🐛? 👉 <a target="_blank" href="https://twitter.com/melvoio">Tell me</a></p>
-                <p>Want to partake? 👉 <a target="_blank"
-                                          href="https://github.com/melvoio/single-php-file">Contribute</a></p>
-                <p>Read the MAKE book by Pieter Levels 👉 <a target="_blank" href="https://makebook.io">MAKEbook.io</a>
-                </p>
-                <p>Get a stunning free template from <a href="https://html5up.net">html5up.net</a> or paid from <a
-                            target="_blank" href="https://singlephpfile.com/go/pixelarity">Pixelarity</a> (referral
-                    link)</p>
-                <p>⚡ Favicon by <a target="_blank" href="https://favicon.io/">favicon.io</a></p>
+                    amazing.</p>
+                <p>Edit <?php echo __FILE__ ?> to make changes. CTRL+F "Build something amazing."</p>
             </div>
             <div class="image">
                 <img src="/assets/images/banner.jpg" alt="Lightning by @noaa from unsplash"/>
